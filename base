@@ -14,3 +14,11 @@ source $DOTFILES_PATH/osx_prefs
 source $DOTFILES_PATH/path
 source $DOTFILES_PATH/powerline
 source $DOTFILES_PATH/rbenv
+
+if [ ! -e "$DOTFILES_PATH/../.gitignore" ] ; then
+  source $DOTFILES_PATH/symlinks
+fi
+
+if [ ! -e "$DOTFILES_PATH/../.gitconfig" ] ; then
+  source $DOTFILES_PATH/symlinks
+fi

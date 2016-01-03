@@ -3,6 +3,12 @@
 export DOTFILES_PATH=~/.dotfiles
 source $DOTFILES_PATH/aliases
 source $DOTFILES_PATH/colors
+
+if [ ! -e "env" ] ; then
+    touch "env"
+fi
+
+source $DOTFILES_PATH/env
 source $DOTFILES_PATH/nvm
 source $DOTFILES_PATH/osx_prefs
 source $DOTFILES_PATH/path

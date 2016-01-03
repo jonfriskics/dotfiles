@@ -1,13 +1,13 @@
 [user]
-	name = Jon Friskics
-	email = jonfriskics@gmail.com
+  name = Jon Friskics
+  email = jonfriskics@gmail.com
 [github]
-	user = jonfriskics
+  user = jonfriskics
 [core]
-	editor = mate -w
-	excludesfile = /Users/jonfriskics/.gitignore
+  editor = mate -w
+  excludesfile = /Users/jonfriskics/.gitignore
 [color]
-	ui = true
+  ui = true
 [color "diff"]
   meta = yellow bold
   frag = magenta bold
@@ -15,15 +15,15 @@
   new = green bold
   whitespace = red reverse
 [mergetool "Kaleidoscope"]
-	cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
-	trustexitcode = true
+  cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
+  trustexitcode = true
 [merge]
-	tool = Kaleidoscope
+  tool = Kaleidoscope
 [difftool "Kaleidoscope"]
-	cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+  cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
 [difftool]
-	prompt = false
+  prompt = false
 [mergetool]
-	prompt = false
+  prompt = false
 [diff]
-	tool = Kaleidoscope
+  tool = Kaleidoscope

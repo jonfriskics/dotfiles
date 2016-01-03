@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# Terminal
+alias ls="ls -G"
+
+# Applications
+alias mate="open -a ~/Applications/Sublime\ Text\ 2.app"
+
+# Git
+alias gs="git status"
+alias gl="git log --pretty=format:'%h %C(red)%ad %C(yellow)%an%Cgreen%d %Creset%s'"
+alias gd="git diff"
+alias gpr="git pull --rebase"
+alias gst="git stash"
+alias gstl="git stash list"
+alias gstp="git stash pop"
+
+# Rails
+alias be="bundle exec"

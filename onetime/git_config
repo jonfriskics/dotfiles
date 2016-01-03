@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+git config --global user.name "Jon Friskics"
+git config --global user.email "jonfriskics@gmail.com"
+git config --global github.user jonfriskics
+git config --global core.editor "mate -w"
+git config --global color.ui true
+git config --global core.excludesfile ~/.gitignore

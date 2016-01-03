@@ -1,0 +1,41 @@
+#!/usr/bin/env bash
+
+brew install caskroom/cask/brew-cask
+brew tap caskroom/versions
+
+brew cask install alfred 2> /dev/null
+brew cask install dropbox 2> /dev/null
+brew cask install google-chrome 2> /dev/null
+brew cask install grandperspective 2> /dev/null
+brew cask install iterm2 2> /dev/null
+brew cask install moom 2> /dev/null
+brew cask install ngrok 2> /dev/null
+brew cask install postgres 2> /dev/null
+brew cask install screenflow 2> /dev/null
+brew cask install screenhero 2> /dev/null
+brew cask install sidestep 2> /dev/null
+brew cask install sketch 2> /dev/null
+brew cask install spotify 2> /dev/null
+brew cask install sublime-text 2> /dev/null
+brew cask install transmit 2> /dev/null
+brew cask install vagrant 2> /dev/null
+brew cask install vagrant-machine 2> /dev/null
+
+# Unused (from Drew Barontini https://github.com/drewbarontini/dotfiles/blob/master/setup/cask)
+# brew cask install anvil 2> /dev/null
+# brew cask install appcleaner 2> /dev/null
+# brew cask install arq 2> /dev/null
+# brew cask install atom 2> /dev/null
+# brew cask install backblaze-downloader 2> /dev/null
+# brew cask install cleanmymac 2> /dev/null
+# brew cask install drobo-dashboard 2> /dev/null
+# brew cask install firefox 2> /dev/null
+# brew cask install flux 2> /dev/null
+# brew cask install hazel 2> /dev/null
+# brew cask install imageoptim 2> /dev/null
+# brew cask install keyboard-maestro 2> /dev/null
+# brew cask install keepingyouawake 2> /dev/null
+# brew cask install mamp 2> /dev/null
+# brew cask install superduper 2> /dev/null
+# brew cask install toggldesktop 2> /dev/null
+# brew cask install vlc 2> /dev/null

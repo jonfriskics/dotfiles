@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+chflags nohidden ~/Library
+
+if [ -d ~/Desktop/Screenshots ]; then defaults write com.apple.screencapture location ~/Desktop/Screenshots; else mkdir ~/Desktop/Screenshots; defaults write com.apple.screencapture location ~/Desktop/Screenshots; fi

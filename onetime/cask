@@ -1,8 +1,10 @@
 #!/usr/bin/env bash
 
+# Cask
 brew install caskroom/cask/brew-cask
 brew tap caskroom/versions
 
+# Applications
 brew cask install alfred 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install google-chrome 2> /dev/null
@@ -10,6 +12,7 @@ brew cask install grandperspective 2> /dev/null
 brew cask install iterm2 2> /dev/null
 brew cask install moom 2> /dev/null
 brew cask install ngrok 2> /dev/null
+brew cask install omnigraffle 2> /dev/null
 brew cask install screenflow 2> /dev/null
 brew cask install screenhero 2> /dev/null
 brew cask install sidestep 2> /dev/null

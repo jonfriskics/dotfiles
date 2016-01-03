@@ -16,9 +16,9 @@ source $DOTFILES_PATH/powerline
 source $DOTFILES_PATH/rbenv
 
 if [ ! -e "$DOTFILES_PATH/../.gitignore" ] ; then
-  source $DOTFILES_PATH/symlinks
+  ln -s ~/.dotfiles/gitignore ~/.gitignore
 fi
 
 if [ ! -e "$DOTFILES_PATH/../.gitconfig" ] ; then
-  source $DOTFILES_PATH/symlinks
+  ln -s ~/.dotfiles/gitconfig ~/.gitconfig
 fi

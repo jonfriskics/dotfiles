@@ -1,0 +1,7 @@
+tmp
+log
+.DS_Store
+*.xcuserstate
+xcuserdata
+*.xccheckout*
+node_modules

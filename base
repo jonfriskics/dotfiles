@@ -3,6 +3,7 @@
 export DOTFILES_PATH=~/.dotfiles
 source $DOTFILES_PATH/aliases
 source $DOTFILES_PATH/colors
+source $DOTFILES_PATH/nvm
 source $DOTFILES_PATH/osx_prefs
 source $DOTFILES_PATH/path
 source $DOTFILES_PATH/powerline

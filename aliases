@@ -2,6 +2,7 @@
 
 # Terminal
 alias ls="ls -la"
+alias sbash="source ~/.bash_profile"
 
 # Applications
 alias mate="open -a ~/Applications/Sublime\ Text\ 2.app"

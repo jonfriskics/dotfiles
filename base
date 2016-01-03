@@ -8,9 +8,3 @@ source $DOTFILES_PATH/osx_prefs
 source $DOTFILES_PATH/path
 source $DOTFILES_PATH/powerline
 source $DOTFILES_PATH/rbenv
-
-# set editor
-export EDITOR='open -a ~/Applications/Sublime\ Text\ 2'
-
-#course stuff
-export SKIP_LEVEL_CHECK=true

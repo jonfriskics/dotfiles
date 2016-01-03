@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Terminal
+alias ls="ls -la"
+
 # Applications
 alias mate="open -a ~/Applications/Sublime\ Text\ 2.app"
 

@@ -10,6 +10,7 @@ brew cask install dropbox 2> /dev/null
 brew cask install google-chrome 2> /dev/null
 brew cask install grandperspective 2> /dev/null
 brew cask install iterm2 2> /dev/null
+brew cask install keyboard-maestro 2> /dev/null
 brew cask install moom 2> /dev/null
 brew cask install ngrok 2> /dev/null
 brew cask install omnigraffle 2> /dev/null
@@ -42,7 +43,6 @@ brew cask install quicklook-json 2> /dev/null
 # brew cask install flux 2> /dev/null
 # brew cask install hazel 2> /dev/null
 # brew cask install imageoptim 2> /dev/null
-# brew cask install keyboard-maestro 2> /dev/null
 # brew cask install keepingyouawake 2> /dev/null
 # brew cask install mamp 2> /dev/null
 # brew cask install superduper 2> /dev/null

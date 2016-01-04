@@ -31,6 +31,9 @@ brew cask install qlimagesize 2> /dev/null
 brew cask install qlmarkdown 2> /dev/null
 brew cask install quicklook-json 2> /dev/null
 
+# Xcode Plugins
+brew cask install alcatraz 2> /dev/null
+
 # Unused (from Drew Barontini https://github.com/drewbarontini/dotfiles/blob/master/setup/cask)
 # brew cask install anvil 2> /dev/null
 # brew cask install appcleaner 2> /dev/null

@@ -5,3 +5,4 @@ log
 xcuserdata
 *.xccheckout*
 node_modules
+dump.rdb

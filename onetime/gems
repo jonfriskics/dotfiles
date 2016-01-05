@@ -2,6 +2,7 @@
 
 gem install bundler
 gem install rails
+gem install fastlane
 
 # Installing Puma on El Capitan
 # Leaving this in here as a reference since I know I'll need it again

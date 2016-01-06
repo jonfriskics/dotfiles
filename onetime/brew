@@ -5,7 +5,6 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 brew doctor
 brew install git
 brew install hub
-brew install nvm
 brew install openssl
 brew install postgresql
 brew install python

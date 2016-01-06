@@ -1,4 +1,7 @@
 #!/usr/bin/env bash
 
-source $(brew --prefix nvm)/nvm.sh
-[[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion
+export NVM_DIR="/usr/local/opt/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+# source ~/.nvm/nvm.sh
+# [[ -r $NVM_DIR/bash_completion ]] && . $NVM_DIR/bash_completion

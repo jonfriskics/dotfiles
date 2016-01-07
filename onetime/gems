@@ -10,3 +10,4 @@ gem install fastlane
 
 # This might do the trick too though!
 bundle config build.puma --with-opt-dir=/usr/local/opt/openssl
+bundle config build.eventmachine --with-opt-dir=/usr/local/opt/openssl

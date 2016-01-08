@@ -4,7 +4,6 @@
 [github]
   user = jonfriskics
 [core]
-  editor = mate -w
   excludesfile = /Users/jonfriskics/.gitignore
 [color]
   ui = true

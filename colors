@@ -38,4 +38,17 @@ branch_color ()
         echo -ne $color
 }
 
-PS1='[\[$(branch_color)\]$(parse_git_branch)\[${c_sgr0}\]] \u@\[${c_red}\]\w\[${c_sgr0}\]: '
+# http://blog.reigndesign.com/blog/git-tip-show-current-branch-and-time-elapsed-since-last-commit-in-command-line/
+
+function git_since_last_commit {
+    now=`date +%s`;
+    last_commit=$(git log --pretty=format:%at -1 2> /dev/null) || return;
+    seconds_since_last_commit=$((now-last_commit));
+    minutes_since_last_commit=$((seconds_since_last_commit/60));
+    hours_since_last_commit=$((minutes_since_last_commit/60));
+    minutes_since_last_commit=$((minutes_since_last_commit%60));
+    
+    echo "${hours_since_last_commit}h${minutes_since_last_commit}m ";
+}
+
+PS1='[\[$(branch_color)\]$(parse_git_branch)\[${c_sgr0}\]] \u@\[${c_red}\]\w\[${c_sgr0}\]: $(git_since_last_commit)'

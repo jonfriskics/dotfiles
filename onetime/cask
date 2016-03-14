@@ -7,6 +7,7 @@ brew tap caskroom/versions
 # Applications
 brew cask install airserver 2> /dev/null
 brew cask install alfred 2> /dev/null
+brew cask install bartender 2> /dev/null
 brew cask install dropbox 2> /dev/null
 brew cask install google-chrome 2> /dev/null
 brew cask install grandperspective 2> /dev/null
@@ -15,9 +16,11 @@ brew cask install keyboard-maestro 2> /dev/null
 brew cask install moom 2> /dev/null
 brew cask install ngrok 2> /dev/null
 brew cask install omnigraffle 2> /dev/null
+brew cask install osxfuse 2> /dev/null
 brew cask install screenflow 2> /dev/null
 brew cask install screenhero 2> /dev/null
 brew cask install sidestep 2> /dev/null
+brew cask install simpholders 2> /dev/null
 brew cask install sketch 2> /dev/null
 brew cask install spotify 2> /dev/null
 brew cask install sublime-text 2> /dev/null

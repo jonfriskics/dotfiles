@@ -132,6 +132,9 @@ defaults write com.tapbots.TweetbotMac OpenURLsDirectly -bool true
 # Enable selecting text in quicklook (from: https://github.com/chockenberry/Provisioning/)
 defaults write com.apple.finder QLEnableTextSelection -bool TRUE
 
+# Fix so TaskPaper will re-open existing windows on load
+defaults write com.hogbaysoftware.TaskPaper3 NSQuitAlwaysKeepsWindows -bool true
+
 for app in "cfprefsd" "Dock" "Finder" "Google Chrome" "Mail" \
   "Safari" "SystemUIServer" "Terminal" "Tweetbot" "iCal"; do
   killall "${app}" &> /dev/null

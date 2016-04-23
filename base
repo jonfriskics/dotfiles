@@ -3,6 +3,7 @@
 export DOTFILES_PATH=~/.dotfiles
 source $DOTFILES_PATH/aliases
 source $DOTFILES_PATH/colors
+source $DOTFILES_PATH/cs
 
 if [ ! -e "$DOTFILES_PATH/env" ] ; then
     touch "env"

@@ -10,6 +10,7 @@ if [ ! -e "$DOTFILES_PATH/env" ] ; then
 fi
 
 source $DOTFILES_PATH/env
+source $DOTFILES_PATH/env_public
 
 if [ ! -e "$DOTFILES_PATH/../.gitconfig" ] ; then
   ln -s $DOTFILES_PATH/gitconfig ~/.gitconfig

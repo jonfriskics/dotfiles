@@ -9,3 +9,6 @@ dump.rdb
 bundle.js
 .ruby-version
 venv
+.vscode
+*.pyc
+__pycache__

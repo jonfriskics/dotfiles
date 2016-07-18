@@ -6,6 +6,7 @@ alias sbash="source ~/.bash_profile"
 
 # Applications
 alias mate="open -a ~/Applications/Sublime\ Text\ 2.app"
+alias code="open -a /Applications/Visual\ Studio\ Code.app"
 
 # Git
 alias gs="git status"

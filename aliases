@@ -4,6 +4,7 @@
 alias ls="ls -la"
 alias sbash="source ~/.bash_profile"
 alias path="echo $PATH | tr ':' '\n'"
+alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
 
 # Applications
 alias mate="open -a ~/Applications/Sublime\ Text\ 2.app"

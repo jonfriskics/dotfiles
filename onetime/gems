@@ -11,3 +11,7 @@ gem install fastlane
 # This might do the trick too though!
 bundle config build.puma --with-opt-dir=/usr/local/opt/openssl
 bundle config build.eventmachine --with-opt-dir=/usr/local/opt/openssl
+
+# Installing libv8 and therubyracer on Sierra
+# gem install libv8 -v '3.16.14.13' -- --with-system-v8
+# gem install therubyracer -- --with-v8-dir=/usr/local/opt/v8-315

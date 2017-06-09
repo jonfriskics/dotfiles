@@ -15,9 +15,9 @@ alias atom="open -a /Applications/Atom.app"
 # Git
 alias gs="git status"
 alias gl="git log --pretty=format:'%h %C(red)%ad %C(yellow)%an%Cgreen%d %Creset%s'"
-alias gd="git diff"
+alias gd="git diff --word-diff"
 alias gdd="git difftool"
-alias gds="git diff --staged"
+alias gds="git diff --staged --word-diff"
 alias gdds="git difftool --staged"
 alias gpr="git pull --rebase"
 alias gst="git stash"
@@ -28,3 +28,7 @@ alias gpull='git pull origin master'
 
 # Rails
 alias be="bundle exec"
+
+# NPM
+alias modules='npm ls --depth=0'
+alias gmodules='npm -g ls --depth=0'

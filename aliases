@@ -26,6 +26,11 @@ alias gstp="git stash pop"
 alias gpush='git push origin master'
 alias gpull='git pull origin master'
 
+# Git enhancements from https://github.com/csswizardry/csswizardry.github.com/issues/66
+alias recap='git log --all --oneline --no-merges --author=jonfriskics@gmail.com'
+alias gt="git tag -l --sort=v:refname | tail -n8"
+alias gsub="grep path .gitmodules | sed 's/.*= //'"
+
 # Rails
 alias be="bundle exec"
 

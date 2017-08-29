@@ -4,6 +4,7 @@
 [[ -d /usr/local/bin ]] && export PATH="/usr/local/bin:$PATH"
 [[ -d /opt/local/sbin ]] && export PATH="/opt/local/sbin:$PATH"
 [[ -d /opt/local/bin ]] && export PATH="/opt/local/bin:$PATH"
+[[ -d /usr/local/Cellar ]] && export PATH="/usr/local/Cellar:$PATH"
 [[ -d $HOME/bin ]] && export PATH="$HOME/bin:$PATH"
 [[ -d /usr/local/Cellar/z/1.9 ]] && export PATH="/usr/local/Cellar/z/1.9:$PATH"
 PATH="${PATH}:${NVM_BIN}"

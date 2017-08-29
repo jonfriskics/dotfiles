@@ -37,3 +37,6 @@ alias be="bundle exec"
 # NPM
 alias modules='npm ls --depth=0'
 alias gmodules='npm -g ls --depth=0'
+
+# Quicktime
+alias playslow="osascript -e 'tell application \"QuickTime Player\" to set rate of document 1 to 0.5'"

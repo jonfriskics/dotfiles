@@ -40,3 +40,7 @@ alias gmodules='npm -g ls --depth=0'
 
 # Quicktime
 alias playslow="osascript -e 'tell application \"QuickTime Player\" to set rate of document 1 to 0.5'"
+
+# Network Stuff
+alias ports="sudo lsof -PiTCP -sTCP:LISTEN"
+alias portsall="lsof -Pn -i4"

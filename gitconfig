@@ -8,10 +8,10 @@
 [color]
   ui = true
 [color "diff"]
-  meta = yellow bold
+  meta = blue
   frag = magenta bold
   old = red
-  new = green bold
+  new = green
   whitespace = red reverse
 [mergetool "Kaleidoscope"]
   cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot

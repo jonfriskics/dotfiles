@@ -15,3 +15,6 @@ bundle config build.eventmachine --with-opt-dir=/usr/local/opt/openssl
 # Installing libv8 and therubyracer on Sierra
 # gem install libv8 -v '3.16.14.13' -- --with-system-v8
 # gem install therubyracer -- --with-v8-dir=/usr/local/opt/v8-315
+
+# Installing old pg
+# sudo env ARCHFLAGS="-arch x86_64" gem install pg -v '0.17.1' -- --with-pg-config=/usr/local/Cellar/postgresql/10.5/bin/pg_config

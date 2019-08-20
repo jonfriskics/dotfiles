@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
+# Meta
+alias showalias="less ~/.dotfiles/aliases"
+
 # Terminal
 alias ls="ls -la"
 alias sbash="source ~/.bash_profile"
@@ -26,6 +29,12 @@ alias gstp="git stash pop"
 alias gpush='git push origin master'
 alias gpull='git pull origin master'
 
+syncfork () {
+  num=${1:-5}
+  dmesg |grep -iw usb|tail -$num
+}
+alias syncfork='git fetch upstream; git checkout master; git merge upstream/master'
+
 # Git enhancements from https://github.com/csswizardry/csswizardry.github.com/issues/66
 alias recap='git log --all --oneline --no-merges --author=jonfriskics@gmail.com'
 alias gt="git tag -l --sort=v:refname | tail -n8"
@@ -33,10 +42,12 @@ alias gsub="grep path .gitmodules | sed 's/.*= //'"
 
 # Rails
 alias be="bundle exec"
+alias rbload='eval "$(rbenv init -)"'
 
 # NPM
 alias modules='npm ls --depth=0'
 alias gmodules='npm -g ls --depth=0'
+alias loadnvm=". $HOME/.nvm/nvm.sh"
 
 # Quicktime
 alias playslow="osascript -e 'tell application \"QuickTime Player\" to set rate of document 1 to 0.5'"

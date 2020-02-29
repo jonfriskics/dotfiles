@@ -5,10 +5,11 @@
   user = jonfriskics
 [core]
   excludesfile = /Users/jonfriskics/.gitignore
+  editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -w -n 
 [color]
   ui = true
 [color "diff"]
-  meta = blue
+  meta = cyan
   frag = magenta bold
   old = red
   new = green

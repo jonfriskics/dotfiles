@@ -1,4 +1,4 @@
-#!/usr/bin/env bash
+#!/usr/bin/env zsh
 
 # lazyload nvm
 # all props goes to http://broken-by.me/lazy-load-nvm/

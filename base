@@ -20,7 +20,9 @@ if [ ! -e "$DOTFILES_PATH/../.gitignore" ] ; then
 fi
 
 source $DOTFILES_PATH/nvm
-# source $DOTFILES_PATH/path
+source $DOTFILES_PATH/path
 # source $DOTFILES_PATH/rbenv
+
+source $DOTFILES_PATH/z
 
 PS1='$ '

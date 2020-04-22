@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+. `brew --prefix`/etc/profile.d/z.sh

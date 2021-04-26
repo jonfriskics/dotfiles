@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+source ~/Docs/zsh-z/zsh-z.plugin.zsh

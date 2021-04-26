@@ -7,6 +7,7 @@ alias showalias="less ~/.dotfiles/aliases"
 alias ls="ls -la"
 alias sbash="source ~/.bash_profile"
 alias path="echo $PATH | tr ':' '\n'"
+alias epath="echo $PATH | tr ':' '\n'"
 alias airport="/System/Library/PrivateFrameworks/Apple80211.framework/Versions/Current/Resources/airport"
 
 # Applications
@@ -28,12 +29,13 @@ alias gstl="git stash list"
 alias gstp="git stash pop"
 alias gpush='git push origin master'
 alias gpull='git pull origin master'
+alias guncommit='git reset HEAD^ --soft'
 
-syncfork () {
-  num=${1:-5}
-  dmesg |grep -iw usb|tail -$num
-}
-alias syncfork='git fetch upstream; git checkout master; git merge upstream/master'
+#syncfork() {
+#  num=${1:-5}
+#  dmesg |grep -iw usb|tail -$num
+#}
+#alias syncfork='git fetch upstream; git checkout master; git merge upstream/master'
 
 # Git enhancements from https://github.com/csswizardry/csswizardry.github.com/issues/66
 alias recap='git log --all --oneline --no-merges --author=jonfriskics@gmail.com'

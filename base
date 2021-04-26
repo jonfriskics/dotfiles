@@ -26,4 +26,6 @@ source $DOTFILES_PATH/z
 source $DOTFILES_PATH/zsh
 
 
+source $DOTFILES_PATH/z
+
 PS1='$ '

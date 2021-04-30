@@ -1,7 +1,3 @@
 #!/usr/bin/env zsh
 
-<<<<<<< HEAD
-source ~/Docs/zsh-z/zsh-z.plugin.zsh
-=======
 . `brew --prefix`/etc/profile.d/z.sh
->>>>>>> e1477c8acbe7815b1dd940f1b05be11ec099abde

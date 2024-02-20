@@ -58,3 +58,7 @@ alias playslow="osascript -e 'tell application \"QuickTime Player\" to set rate 
 # Network Stuff
 alias ports="sudo lsof -PiTCP -sTCP:LISTEN"
 alias portsall="lsof -Pn -i4"
+
+# Obsidian Cloud Sync
+alias oto="rsync -a ~/Docs/obsidian-personal/ ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/iCloud\ sync\ notes/"
+alias ofrom="rsync -a ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/iCloud\ sync\ notes/ ~/Docs/obsidian-personal/"

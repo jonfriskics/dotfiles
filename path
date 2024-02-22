@@ -1,10 +1,28 @@
 #!/usr/bin/env zsh
 
-[[ -d /usr/local/sbin ]] && export PATH=/usr/local/sbin:$PATH
-[[ -d /usr/local/bin ]] && export PATH=/usr/local/bin:$PATH
-[[ -d /opt/local/sbin ]] && export PATH=/opt/local/sbin:$PATH
-[[ -d /opt/local/bin ]] && export PATH=/opt/local/bin:$PATH
-[[ -d /usr/local/Cellar ]] && export PATH=/usr/local/Cellar:$PATH
-[[ -d $HOME/.cargo ]] && export PATH=$HOME/.cargo/bin:$PATH
-[[ -d $HOME/bin ]] && export PATH=$HOME/bin:$PATH
-PATH="${PATH}:${NVM_BIN}"
+add_to_path_if_not_present() {
+  if [[ ":$PATH:" != *":$1:"* ]]; then
+    export PATH="$1:$PATH"
+  fi
+}
+
+[[ -d /usr/local/sbin ]] && add_to_path_if_not_present /usr/local/sbin
+[[ -d /usr/local/bin ]] && add_to_path_if_not_present /usr/local/bin
+[[ -d /opt/local/sbin ]] && add_to_path_if_not_present /opt/local/sbin
+[[ -d /opt/local/bin ]] && add_to_path_if_not_present /opt/local/bin
+[[ -d /usr/local/Cellar ]] && add_to_path_if_not_present /usr/local/Cellar
+[[ -d $HOME/.cargo ]] && add_to_path_if_not_present $HOME/.cargo/bin
+[[ -d $HOME/bin ]] && add_to_path_if_not_present $HOME/bin
+
+if [ -n "$NVM_BIN" ] && [[ ":$PATH:" != *":$NVM_BIN:"* ]]; then
+  PATH="${PATH}:${NVM_BIN}"
+fi
+
+# [[ -d /usr/local/sbin ]] && export PATH=/usr/local/sbin:$PATH
+# [[ -d /usr/local/bin ]] && export PATH=/usr/local/bin:$PATH
+# [[ -d /opt/local/sbin ]] && export PATH=/opt/local/sbin:$PATH
+# [[ -d /opt/local/bin ]] && export PATH=/opt/local/bin:$PATH
+# [[ -d /usr/local/Cellar ]] && export PATH=/usr/local/Cellar:$PATH
+# [[ -d $HOME/.cargo ]] && export PATH=$HOME/.cargo/bin:$PATH
+# [[ -d $HOME/bin ]] && export PATH=$HOME/bin:$PATH
+# PATH="${PATH}:${NVM_BIN}"

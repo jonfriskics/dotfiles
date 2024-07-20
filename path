@@ -14,9 +14,9 @@ add_to_path_if_not_present() {
 [[ -d $HOME/.cargo ]] && add_to_path_if_not_present $HOME/.cargo/bin
 [[ -d $HOME/bin ]] && add_to_path_if_not_present $HOME/bin
 
-if [ -n "$NVM_BIN" ] && [[ ":$PATH:" != *":$NVM_BIN:"* ]]; then
-  PATH="${PATH}:${NVM_BIN}"
-fi
+# if [ -n "$NVM_BIN" ] && [[ ":$PATH:" != *":$NVM_BIN:"* ]]; then
+#   PATH="${PATH}:${NVM_BIN}"
+# fi
 
 # [[ -d /usr/local/sbin ]] && export PATH=/usr/local/sbin:$PATH
 # [[ -d /usr/local/bin ]] && export PATH=/usr/local/bin:$PATH

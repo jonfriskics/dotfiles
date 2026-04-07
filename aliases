@@ -16,6 +16,7 @@ alias mate="open -a /Applications/Sublime\ Text.app"
 alias code="open -a /Applications/Visual\ Studio\ Code.app"
 alias atom="open -a /Applications/Atom.app"
 alias cursor="open -a /Applications/Cursor.app"
+alias zed="open -a /Applications/Zed.app"
 
 # Git
 alias gs="git status"

@@ -1,0 +1,3 @@
+#!/usr/bin/env zsh
+
+alias utm_1920="osascript -e 'tell application \"System Events\" to tell process \"UTM\"' -e 'set position of window 1 to {-2560, 0}' -e 'set size of window 1 to {1920, 1120}' -e 'end tell'"

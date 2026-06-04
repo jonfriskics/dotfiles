@@ -6,6 +6,7 @@ add_to_path_if_not_present() {
   fi
 }
 
+[[ -d /opt/homebrew/sbin ]] && add_to_path_if_not_present /opt/homebrew/sbin
 [[ -d /usr/local/sbin ]] && add_to_path_if_not_present /usr/local/sbin
 [[ -d /usr/local/bin ]] && add_to_path_if_not_present /usr/local/bin
 [[ -d /opt/local/sbin ]] && add_to_path_if_not_present /opt/local/sbin
@@ -13,6 +14,7 @@ add_to_path_if_not_present() {
 [[ -d /usr/local/Cellar ]] && add_to_path_if_not_present /usr/local/Cellar
 [[ -d $HOME/.cargo ]] && add_to_path_if_not_present $HOME/.cargo/bin
 [[ -d $HOME/bin ]] && add_to_path_if_not_present $HOME/bin
+[[ -d $HOME/.local/bin ]] && add_to_path_if_not_present $HOME/.local/bin
 
 # if [ -n "$NVM_BIN" ] && [[ ":$PATH:" != *":$NVM_BIN:"* ]]; then
 #   PATH="${PATH}:${NVM_BIN}"

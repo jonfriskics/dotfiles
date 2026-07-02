@@ -64,3 +64,6 @@ alias portsall="lsof -Pn -i4"
 # Obsidian Cloud Sync
 alias oto="rsync -a ~/code/obsidian-personal/ ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/iCloud\ sync\ notes/"
 alias ofrom="rsync -a ~/Library/Mobile\ Documents/iCloud~md~obsidian/Documents/iCloud\ sync\ notes/ ~/code/obsidian-personal/"
+
+# AWS reminders
+alias awslinux="cat ~/.dotfiles/aws"

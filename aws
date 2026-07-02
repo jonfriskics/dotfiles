@@ -1,0 +1,12 @@
+/etc  - system-wide config
+/var  - files that change a lot
+/proc - kernel, auto-generated
+/boot - usually ignore
+/sys  - device, driver, kernel features
+/dev  - hardware + virtual devices
+/bin  - binaries, linked to /usr/bin
+/lib  - library files for bins, linked to /usr/lib
+/opt  - packages, /opt/aws
+/home - user directory, /home/ec2-user
+/tmp  - delete after reboot
+/usr  - /bin, /lib, /local for stuff not installed in /opt

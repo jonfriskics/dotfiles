@@ -34,3 +34,9 @@
 	smudge = git-lfs smudge -- %f
 [init]
 	defaultBranch = main
+[credential "https://origin.cursor.com/git"]
+	helper = 
+	helper = !/Users/jonfriskics/.local/bin/origin credential-helper
+[credential "https://origin.cursor.com"]
+	helper = 
+	helper = !/Users/jonfriskics/.local/bin/origin credential-helper

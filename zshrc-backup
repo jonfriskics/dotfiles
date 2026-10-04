@@ -1,0 +1,32 @@
+source ~/.dotfiles/base
+export PATH=/usr/local/bin:$PATH
+
+
+# Load Angular CLI autocompletion.
+#source <(ng completion script)
+
+# Added by Windsurf
+export PATH="/Users/jonfriskics/.codeium/windsurf/bin:$PATH"
+
+# Added by uv
+. "$HOME/.local/bin/env"
+
+# terminal file browser - load with br
+source /Users/jonfriskics/.config/broot/launcher/bash/br
+
+export PATH="$HOME/bin:$PATH"
+
+# prompt theme - overrides PS1='$ ' in base file
+source /opt/homebrew/opt/spaceship/spaceship.zsh
+
+# fzf - fuzzy finder, ctrl-R for history, ctrl-T for file picker, opt-C to fuzzy cd
+source <(fzf --zsh)
+
+# autosuggestions while typing, right arrow to accept
+source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# add zsh-syntax-highlighting, green is valid command, red is unknown command
+source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
+
+# add mise - manages node, ruby, python versions
+eval "$(mise activate zsh)"

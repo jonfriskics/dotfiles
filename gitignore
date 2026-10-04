@@ -12,3 +12,4 @@ venv
 .vscode
 *.pyc
 __pycache__
+**/.claude/.cc-writes/
